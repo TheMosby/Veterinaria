@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
+import tkinter as tk
 
 
 def mensaje():
@@ -11,6 +12,6 @@ def suma(n1 , n2, lbl_resultado):
     resultado= float(num1) + float(num2)
     lbl_resultado.config(text=f"La suma es: {resultado}")
 
-    
-    
-    
+def deshabilitar_label(label):
+    label.config(text="")
+
